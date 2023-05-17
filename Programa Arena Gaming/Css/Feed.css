@@ -172,22 +172,3 @@
   background-image: url(../IMG/Feed/nrg.jpeg);
   background-size: cover;
 }
-/*.feed-text-caption{
-  top: 178px;
-  color: rgba(255, 255, 255, 1);
-  width: 425px;
-  height: auto;
-  position: absolute;
-  text-align: left;
-  line-height: normal;
-}
-
-.feed-filter{
-  width: 200px;
-  height: 20px;
-  top: 20px;
-  display: flex;
-  align-self: baseline;
-  position: absolute;
-  left: 85%;
-}*/
