@@ -1,0 +1,27 @@
+#Logo img{
+    width: auto!important;
+    height: 20%!important;
+}
+.navbar{
+    background-color: #2C1D4B!important;
+    height: 4em ;
+}
+.Letras_Cabeçalho{
+    color: #fff!important;
+    font-size: 1.3em;
+    padding: 0 20px!important;
+}
+.d-flex{
+    margin-top: 2%;
+    margin-left: 7%;
+}
+#navbarSupportedContent{
+    width: 50%;
+}
+.navbar-nav{
+    margin-left: 10%;
+}
+#Icone_Login img{
+    width: 96%;
+    padding-right: 15%;
+}
