@@ -1,3 +1,15 @@
+:root {
+    --main-color: #2C1D4B;
+    --background-color:#404040;
+    --link-color: #666666;
+    --text1: #999999;
+    --highligth-text: #333333;
+    --input-text: #555555;
+    --white-color: #FFFFFF;
+    --point-list: #CCCCCC;
+    --line-input: #D9D9D9;
+    --red-button: #E01414;
+  }
 #Logo img{
     width: auto!important;
     height: 20%!important;
@@ -26,3 +38,346 @@
     width: 96%;
     padding-right: 15%;
 }
+.testeae{
+    background-color: var(--main-color);
+    border-style: none;
+    width: 100%;
+}
+.testeae:hover{
+    background-color: var(--background-color);
+}
+.input, button {
+    outline: none !important;
+    border: none;
+  }
+  
+.button:hover {
+      cursor: pointer;
+  }
+  
+
+.container{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background: rgb(64,64,64);
+    background: linear-gradient(160deg, rgba(64,64,64,1) 17%, rgba(38,9,99,1) 100%);
+}
+
+.container-cadastro{
+    width: 500px;  
+    min-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 6%;
+}
+
+.wrap-cadastro {
+    width: 500px;  
+    min-height: 600px;
+    width: 100%;
+    padding: 10px;
+    background: var(--background-color);  
+    border-radius: 6%;
+}
+
+.usuario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+legend{
+    text-align: center; 
+    color: var(--white-color); 
+    padding: 10px;
+}
+.nome-sobrenome{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-box{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid var(--line-input);
+}
+
+.input-form{
+    text-indent: 5px;
+    font-size: 18px;
+    color: var(--input-text);
+    line-height: 1;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-style: none;
+    background: var(--white-color)
+}
+
+#nome{
+    width: 200px;
+}
+
+#sobrenome{
+    width: 200px;
+}
+
+.input-datanascimento{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.botões{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.botão-continuar{
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    height: 40px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+}
+
+.botão-sair{
+    font-size: 15px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    height: 40px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+}
+
+.modal > a {
+    font-size: 15px;
+    color: var(--white-color);
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    transition: all 0.4s;
+    text-decoration: none;
+}
+
+.botão-continuar:hover{
+    background-color: var(--highligth-text);
+}
+.botão-sair:hover{
+    background-color: var(--highligth-text);
+}
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background: rgb(64,64,64);
+  }
+  
+  .container-login {
+    width: 500px;  
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 6%;
+  }
+  
+  .wrap-login {
+    width: 500px;  
+    min-height: 600px;
+    width: 100%;
+    padding: 10px;
+    background: var(--background-color);  
+    border-radius: 6%;
+  }
+  
+  /*
+    Formulário
+  */
+  
+  .login-form {
+    width: 100%;
+  }
+
+  
+  /*
+    Input
+  */
+  
+  .wrap-input {
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid var(--line-input);
+  }
+  
+  .input-form {
+    font-family: Poppins-SemiBold;
+    font-size: 18px;
+    color: var(--input-text);
+    line-height: 1;
+    display: block;
+    width: 100%;
+    height: 45px;
+    background: var(--white-color)
+  }
+  
+  .focus-input-form {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  .focus-input-form::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.4s;
+    background: var(--main-color);
+  }
+  
+  .focus-input-form::after {
+    font-family: Poppins-Medium;
+    font-size: 18px;
+    color: var(--text1);
+    line-height: 1.2;
+    content: attr(data-placeholder);
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    padding-left: 5px;
+    transition: all 0.4s;
+  }
+  
+  .input-form:focus + .focus-input-form::after {
+    top: -20px;
+    font-size: 15px;
+  }
+  
+  .input-form:focus + .focus-input-form::before {
+    width: 100%;
+  }
+  
+  .has-val.input-form + .focus-input-form::after {
+    top: -20px;
+    font-size: 15px;
+  }
+  
+  .has-val.input-form + .focus-input-form::before {
+    width: 100%;
+  }
+  
+  /*
+    Botão
+  */
+  
+  .container-form-btn {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+  }
+  
+  .form-btn {
+    font-size: 15px;
+    color: var(--white-color);
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    width: 40%;
+    height: 40px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    transition: all 0.4s;
+  }
+
+  .login-form-btn {
+    font-size: 14px;
+    color: var(--white-color);
+    line-height: 1.2;
+    text-transform: uppercase;
+    
+    text-align: start;
+    padding-left: 5px;
+    margin: 10px;
+    width: 80%;
+    height: 35px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    transition: all 0.4s;
+  }
+  .botão-sair{
+    font-size: 15px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    height: 40px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+}
+  .form-btn:hover  {
+    background-color: var(--highligth-text);
+  }
+  
+  /*
+    Login utils
+  */
+  
+  .login-utils {
+    margin-top: 10px;
+  }
+  
+  .login-utils li {
+    position: relative;
+    text-align: center;
+  }
+ 
