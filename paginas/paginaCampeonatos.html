@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campeonatos</title>
+    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/Css/Cabecalho.css">
+    <link rel="stylesheet" href="/Css/rodape.css">
+    <link rel="stylesheet" href="/Css/paginaCampeonatos.css">
+</head>
+<body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid row">
+        <a class="navbar-brand Letras_Cabeçalho col-6" href="/index.html">
+           <div><img src="/IMG/Cabecalho/Logo White.png" width="60px" title="The Gaming Arena" alt=""></div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+           aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  mb-2 mb-lg-0">
+           <li class="nav-item">
+              <a class="nav-link col-1 active Letras_Cabeçalho" aria-current="page"
+                 href="#">Transmissões</a>
+           </li>
+           <li class="nav-item">
+              <a class="nav-link col-1 Letras_Cabeçalho" href="#">Torneios</a>
+           </li>
+        </ul>
+        <form class="d-flex col-4" role="search">
+           <input class="form-control me-3 " type="search" placeholder="Search" aria-label="Search">
+           <button class="btn Botao_Pesquisa btn-outline-success" type="submit">Pesquisar</button>
+        </form>
+        <div class="dropdown col-1" style="color: #2C1D4B;" >
+           <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #2C1D4B; width: 85px;">
+           <img id="btn-dropdown" src="/IMG/Cabecalho/User.png" alt="" style="height: 50px;">
+           </button>
+           <ul class="dropdown-menu dropdown-menu-end" style="background-color: #2C1D4B;">
+              <li class="btn-dropdown"><button type="button" class="btn btn-primary btn-dropdown "
+                 data-bs-toggle="modal" data-bs-target="#exampleModal">
+                 login
+                 </button>
+              </li>
+              <li class="btn-dropdown"><button type="button" class="btn btn-primary btn-dropdown"
+                 data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                 cadastro
+                 </button>
+              </li>
+           </ul>
+        </div>
+        <div class="modal" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog">
+           <div class="modal-content">
+              <div class="modal-body" style="background-color: #404040;">
+                 <div class="container">
+                    <div class="wrap-login">
+                       <form class="login-form">
+                          <div>
+                             <img style="margin:auto; display: block; width: 40%;" src="/IMG/Cabecalho/User.png"
+                                alt="user icon">
+                             <legend >Login do
+                                usuário
+                             </legend>
+                          </div>
+                          <div class="input-box">
+                             <input class="input-form" type="email" name="email" placeholder="Email"
+                                required>
+                             <div class="input-box">
+                                <input class="input-form" type="password" name="senha"
+                                   placeholder="Senha" required>
+                             </div>
+                             <legend>
+                             <a href="#" style="font-size: 15px;">
+                                   Esqueceu sua senha?
+                               </a>
+                           </legend>
+                             <div class="container-form-btn">
+                                <a class="form-btn" href="#">
+                                Cadastrar
+                                </a>
+                                <a class="form-btn" href="#">
+                               Login
+                                </a>
+                             </div>
+                             <div class="container-form-btn" style="margin-bottom: 10px;
+                             padding-bottom: 15px; ;border-bottom: 2px solid var(--line-input);">
+                               <a class="form-btn" href="/index.html" style=" background-color: var(--red-button);" >
+                                   Sair</a>
+                             </div>
+                             <div class="container-form-btn">
+                                <button class="login-form-btn">
+                                <img style="width: 6%;" src="/IMG/Feed/logo-facebookpng-32215.png"
+                                   alt="facebook icon">
+                                Entrar usando uma conta facebook
+                                </button>
+                             </div>
+                             <div class="container-form-btn">
+                                <button class="login-form-btn">
+                                <img style="width: 5%;" src="/IMG/Feed/google-logo-9814.png" alt="google">
+                                Entrar usando uma conta google
+                                </button>
+                             </div>
+                       </form>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+</nav>
+     <!--Fim NavBar-->
+     <main>
+        <div class="container-campeonatos">
+            <div id="texto-campeonatos">
+                <h2 class="campeonatoh2"><b>Campeonatos:</b></h2>
+                <h4 id="campeonatoh4">Filtro: </h4>
+                <form id="campeonatoh4" action="">
+                    <select name="filtro" id="filtro">
+                        <option value="">Inscrições</option>
+                        <option value="">Todos</option>
+                    </select>
+                </form>
+            </div>
+            <div class=""></div>
+        </div>
+    
+     </main>
+     <footer>
+        <div id="linha">
+           <a id="titulo"href="#" title="Página inicial">
+              <h2>The Gaming Arena</h2>
+           </a>
+        </div>
+        <div id="div_footer">
+           <div>
+              <ul id="lista1">
+                 <li class="titulo_lista">Referência</li>
+                 <li><a href="#">Politica de Privacidade</a> </li>
+                 <li><a href="#">Termos de Serviços</a> </li>
+                 <li><a href="#">FAQ</a></li>
+              </ul>
+           </div>
+           <div>
+              <ul id="lista2">
+                 <li class="titulo_lista">Conteúdo</li>
+                 <li><a href="#">Notícias</a></li>
+                 <li><a href="#">Torneios</a></li>
+                 <li><a href="#">Transmissões</a></li>
+              </ul>
+           </div>
+           <div>
+              <div id="lista3">
+                 <ul>
+                    <li class="titulo_lista">Usuário</li>
+                    <li><a href="#">Minha Conta</a></li>
+                 </ul>
+              </div>
+           </div>
+           <div id="teste">
+              <ul id="lista4">
+                 <li class="titulo_lista">Idioma</li>
+                 <li><a href="#"><img src="/IMG/rodape/bandeira-brasil.jpg" alt="PT-BR" width="15px">PT-BR</a></li>
+              </ul>
+           </div>
+           <div id="redes_sociais">
+              <a href="#"><img class="icone_footer" src="/IMG/rodape/facebook-icone.png" alt="Facebook" title="Facebook" width="30px"></a>
+              <a href="#"><img class="icone_footer" src="/IMG/rodape/twitter-icone.png" alt="Twitter" title="Twitter" width="30px"></a>
+              <a href="#"><img class="icone_footer" src="/IMG/rodape/instagram-icone.png" alt="Instagram" title="Instagram" width="30px"></a>
+              <a href="#"><img class="icone_footer" src="/IMG/rodape/discord-icone.png" alt="Discord" title="Discord" width="30px"></a>
+           </div>
+        </div>
+     </footer>
+     <script src="/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
