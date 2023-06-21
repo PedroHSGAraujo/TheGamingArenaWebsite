@@ -11,8 +11,7 @@ header {
 .nav-bar{
     display: flex;
     justify-content:  space-between;
-    padding: 0.625rem 1.18rem;
-    
+    padding: 0.625rem 1.18rem;  
 }
 .logo{
     display: flex;
@@ -33,7 +32,7 @@ header {
     border: none;
     height: 2.313rem;
 }
-.fa-magnifying-glass{
+#lupa-desktop{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -62,22 +61,55 @@ header {
 .mobile-menu{
     display: none;
 }
-@media screen and (max-width: 769px) {
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+  }
+  .dropdown-content {
+    right: 0%;
+   /* right: 30%; alinhar drop box no centro*/
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+@media screen and (max-width: 650px) {
     .nav-bar{
         padding: 1.5rem 4rem;
+       
     }
     .nav-item{
         display: none;
     }
+  
     .nav-list ul input{
         display: none;
         
     }
-    .fa-magnifying-glass{
+
+    #lupa-desktop{
         display: none;
     }
+
     .mobile-menu-icon{
         display: block;
+    }
+    #user-icon-desktop{/*remove o icone do menu na versão desktop - topo*/
+        display:none;
+    }
+    #user-icon-mobile{/*formatação específica para o mobile*/
+        justify-content:center;
     }
     .mobile-menu-icon button{
         background-color: transparent;
@@ -87,8 +119,10 @@ header {
     .mobile-menu ul{
         display: flex;
         flex-direction: column;
-        text-align: center;
+        text-align: end;
+        /*text-align: center; caso queira centrar os itens de menu no mobile*/ 
         padding-bottom: 1rem;
+        
     }
     .mobile-menu .nav-item{
         display: block;
@@ -98,21 +132,26 @@ header {
         display: block;
         padding: 1rem 2rem;
     }
-    .mobile-menu .login-button button{
+    .mobile-menu .login-button button{/* onde está esta classe?*/
         width: 100%;
     }
     .open{
         display: block;
     }
-    .fa-magnifying-glass{
-        position: absolute;
+    #lupa-mobile {
+        position: relative;
+        padding-left: 38%;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-125%);
         right: 10px;
         color: #000000;
     }
-    #search{
-        width: 50%;
+    #searchM{/*alterei o ID*/
+        margin-top: 20px;
+        margin-left: 59%;
+        /*margin-left: auto; 
+        margin-right: auto; para centralizar o input*/
+        width: 40%;
         border-radius: 3px;
         border-style: none;
         height: 26px;
