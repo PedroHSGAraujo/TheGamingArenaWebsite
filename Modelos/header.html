@@ -1,42 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Responsivo</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
     <script src="https://kit.fontawesome.com/276a6af193.js" crossorigin="anonymous"></script>
 </head>
-    <body>
-        <header>
-            <nav class="nav-bar">
-                <div class="logo">
-                    <img src="assets/img/Logo White.png" alt="" width="60px ">
-                </div>
 
-                <div class="nav-list">
-                    <ul>
-                        <li class="nav-item"><a href="#" class="nav-link">Transmissões</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Torneios</a></li>
-                        <input type="text" name="search" id="search" placeholder="Pesquisar">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </ul>
-                    <img class="user-icon" src="assets/img/User.png" alt="" width="64px">
-                </div>
-                <div class="mobile-menu-icon">
-                    <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
-                </div>
-            </nav>
-            <div class="mobile-menu">
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="assets/img/Logo White.png" alt="" width="60px ">
+            </div>
+
+            <div class="nav-list">
                 <ul>
                     <li class="nav-item"><a href="#" class="nav-link">Transmissões</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Torneios</a></li>
-                        <input type="text" name="search" id="search" placeholder="Pesquisar">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" name="search" id="searchD" placeholder="Pesquisar">
+                    <i id="lupa-desktop" class="fa-solid fa-magnifying-glass"></i>
                 </ul>
+
+                <!--
+                <div id="user-icon-desktop">
+                    <img class="user-icon" src="assets/img/User.png" alt="" width="64px">
+                </div>
+
+-->
+
+                <div class="dropdown">
+                    <div id="user-icon-desktop">
+                        <img class="user-icon" src="assets/img/User.png" alt="" width="64px">
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="">
+                            <p>Login</p>
+                        </a>
+                        <a href="">
+                            <p>Cadastro</p>
+                        </a>
+                    </div>
+                </div>
+
             </div>
-            
-        </header>
-        <script src="assets/js/script.js"></script>
-    </body>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Transmissões</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Torneios</a></li>
+                <input type="text" name="search" id="searchM" placeholder="Pesquisar">
+                <i id="lupa-mobile" class="fa-solid fa-magnifying-glass"></i>
+                <div class="dropdown">
+                    <div id="user-icon-mobile">
+                        <img class="user-icon-mobile" src="assets/img/User.png" alt="" width="64px">
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="">
+                            <p>Login</p>
+                        </a>
+                        <a href="">
+                            <p>Cadastro</p>
+                        </a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+
+    </header>
+    <script src="assets/js/script.js"></script>
+</body>
+
 </html>
