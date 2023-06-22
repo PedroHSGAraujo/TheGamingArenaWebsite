@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VCT Américas 2023: Sacy promete Sentinels "200%" contra FURIA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Css/header.css">
+    <script src="https://kit.fontawesome.com/276a6af193.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Css/paginaNoticiaResponsivo.css">
+    <link rel="stylesheet" href="../Css/rodapeResponsivo.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../IMG/Cabecalho/Logo White.png" alt="" width="60px ">
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Transmissões</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Torneios</a></li>
+                    <input type="text" name="search" id="searchD" placeholder="Pesquisar">
+                    <i id="lupa-desktop" class="fa-solid fa-magnifying-glass"></i>
+                </ul>
+
+                <!--
+                <div id="user-icon-desktop">
+                    <img class="user-icon" src="assets/img/User.png" alt="" width="64px">
+                </div>
+
+-->
+
+                <div class="dropdown">
+                    <div id="user-icon-desktop">
+                        <img class="user-icon" src="../IMG/Cabecalho/User.png" alt="" width="64px">
+                    </div>
+                    <div class="dropdown-content">
+                        <a class="btn btn-primary testeae" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <p>Login</p>
+                        </a>
+                        <a class="btn btn-primary testeae" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <p>Cadastro</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../IMG/Cabecalho/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Transmissões</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Torneios</a></li>
+                <input type="text" name="search" id="searchM" placeholder="Pesquisar">
+                <i id="lupa-mobile" class="fa-solid fa-magnifying-glass"></i>
+                <div class="dropdown">
+                    <div id="user-icon-mobile">
+                        <img class="user-icon-mobile" src="../IMG/Cabecalho/User.png" alt="" width="64px">
+                    </div>
+                    <div class="dropdown-content">
+                        <a class="btn btn-primary testeae " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <p>Login</p>
+                        </a>
+                        <a class="btn btn-primary testeae" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <p>Cadastro</p>
+                        </a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+
+
+
+
+
+        <div class="modal" id="exampleModal2" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header border-none" style="background-color: #404040;">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="background-color: #404040;">
+                        <div class="container">
+                            <div class="container-cadastro">
+                                <div class="wrap-cadastro">
+                                    <form class="cadastro-form">
+                                        <div>
+                                            <img src="../IMG/Cabecalho/User.png" alt="Usuário"
+                                                style="margin:auto; display: block; width: 40%;">
+                                            <legend style="text-align: center; color: #fff; padding: 10px;">Cadastro do
+                                                usuário</legend>
+                                        </div>
+
+                                        <div class="nome-sobrenome"
+                                            style="display: flex;align-items: center;justify-content: space-between;">
+                                            <div class="input-box" id="nome">
+                                                <input class="input-form" type="text" name="nome" placeholder="Nome"
+                                                    required>
+                                            </div>
+
+                                            <div class="input-box" id="sobrenome">
+                                                <input class="input-form" type="text" name="Sobrenome"
+                                                    placeholder="Sobrenome" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="input-box">
+                                            <input class="input-form" type="email" name="email" placeholder="Email"
+                                                required>
+
+                                        </div>
+                                        <div class="input-box">
+                                            <input class="input-form" type="tel" name="telefone"
+                                                placeholder="Telefone (opcional)">
+
+                                        </div>
+                                        <div class="input-box">
+                                            <input class="input-form" type="password" name="senha" placeholder="Senha"
+                                                required>
+
+                                        </div>
+                                        <div class="input-box">
+                                            <input class="input-form" type="password" hidden name="confirmasenha"
+                                                placeholder="Confirme sua senha" required>
+                                        </div>
+                                        <div class="input-datanascimento">
+                                            <legend>Data de nascimento:</legend>
+                                            <input class="input-form" type="date" name="datanascimento" required>
+                                        </div>
+                                        <hr>
+                                        <div class="container-form-btn">
+                                            <a class="form-btn" id="botão-continuar" href="#">
+                                                Enviar
+                                            </a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="exampleModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: #404040;">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="background-color: #404040;">
+                        <div class="container">
+                            <div class="wrap-login">
+                                <form class="login-form">
+                                    <div>
+                                        <img style="margin:auto; display: block; width: 40%;"
+                                            src="../IMG/Cabecalho/User.png" alt="user icon">
+                                        <legend>Login do
+                                            usuário
+                                        </legend>
+                                    </div>
+                                    <div class="input-box">
+                                        <input class="input-form" type="email" name="email" placeholder="Email"
+                                            required>
+                                        <div class="input-box">
+                                            <input class="input-form" type="password" name="senha" placeholder="Senha"
+                                                required>
+                                        </div>
+                                        <legend>
+                                            <a href="#" style="font-size: 15px;">
+                                                Esqueceu sua senha?
+                                            </a>
+                                        </legend>
+                                        <div class="container-form-btn">
+                                            <a class="form-btn" data-bs-toggle="modal" data-bs-target="#exampleModal2"
+                                                href="#">
+                                                Cadastrar
+                                            </a>
+                                            <a class="form-btn" href="#">
+                                                Login
+                                            </a>
+                                        </div>
+                                        <div class="container-form-btn" style="margin-bottom: 10px;
+                          padding-bottom: 15px; ;border-bottom: 2px solid var(--line-input);">
+                                        </div>
+                                        <div class="container-form-btn">
+                                            <button class="login-form-btn">
+                                                <img style="width: 6%;" src="../IMG/Feed/logo-facebookpng-32215.png"
+                                                    alt="facebook icon">
+                                                Entrar usando uma conta facebook
+                                            </button>
+                                        </div>
+                                        <div class="container-form-btn">
+                                            <button class="login-form-btn">
+                                                <img style="width: 5%;" src="../IMG/Feed/google-logo-9814.png"
+                                                    alt="google">
+                                                Entrar usando uma conta google
+                                            </button>
+                                        </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </header>
+    <script src="../Css/script.js"></script>
+
+      <div class="noticia mt-5">
+        <h1 class="noticia_h1">VCT Américas 2023: Sacy promete Sentinels "200%" contra FURIA</h1>
+        <h2 class="noticia_h2">Por Filipe Guedes - GloboEsporte<br>16 de maio de 2023</h2>
+        <hr class="noticia_hr">
+        <img class="noticia_img" src="../IMG/paginaNoticia/paginaNoticiaVCTAmericas/imgVCT.jpg" width="800" height="540">
+        <h3 class="noticia_h3">Sacy brinca com companheiros de equipe da Sentinels durante disputa da 4ª rodada do VCT Américas — Foto: <br>Divulgação / VCT Américas</h3>
+        <p class="noticia_p">A vitória da Sentinels por 2 a 0 sobre a KRÜ Esports, no último domingo, permitiu que a equipe siga sonhando com a classificação para os playoffs do VCT Américas 2023. Com três vitórias e cinco derrotas na competição, o time de Valorant da organização norte-americana precisa vencer a FURIA na próxima rodada e torcer para alguns resultados entre os jogos da 100Thieves, Evil Geniuses e Leviatán. No entanto, mesmo com as dificuldades para passar de fase, Gustavo “Sacy” garantiu força máxima do grupo para o confronto.<br><br>
+          — Valendo vaga ou não, a gente vai dar nossos 200%, porque temos que estar preparados. Se a gente for para os playoffs, beleza, amém. Se a gente não for, ainda tem o Last Chance, então temos que estar preparados desde agora — afirmou o brasileiro aos casters Bernardo “BiDa” e Guilherme “Tixinha”.<br><br>
+          A fala do iniciador da Sentinels reitera o que ele havia dito recentemente em live, quando ponderou que o time deveria se esforçar para "arrumar a casa" mesmo que não houvesse chance de qualificação para os playoffs. As chances, no entanto, por menores que fossem, sempre existiram e a equipe chegará buscando um sonho na última rodada.<br><br>
+          Durante a entrevista pós-jogo, Sacy também comentou sobre a atual estrutura do time dentro do servidor após as sucessivas mudanças pela qual o clube de esports passou entre alterações de jogadores ou na comissão técnica. Com o retorno de Tyson “TenZ” e a saída do ex-capitão Rory “dephh”, anunciada na última semana, a equipe tem utilizado sua terceira formação distinta dentro da competição.</p>
+        <p class="noticia_p">— A gente está testando o IGL (in-game leader) entre eu e o Marved. Primeiro que não tem um IGL de ofício, então está uma bagunça. A gente falou: “cara, vamos testar assim essa semana: deixar o Jimmy tomar as decisões e eu como second caller”. Acredito que com ele, agora, eu estou conseguindo ajudar mais no mid-round, então está indo. Mas está no começo, então está bagunçado, como desde sempre. Só procuro um pouco de estabilidade e paz, pelo amor de Deus (risos) — revelou o ex-LOUD.<br><br>
+          Outro ponto abordado pelo iniciador foi a opção estratégica da Sentinels de utilizar dois duelistas no mapa Bind, Zachary “zekken” como Raze e TenZ como Jett. O brasilero respondeu que é uma tentativa de se adaptar ao estilo de jogo que vem se consolidando no cenário competitivo do First Person Shoot (FPS) da Riot Games.<br><br>
+          — O meta do Valorant está meio “doideira”. A galera está tendo uma reação muito mais rápida do que no ano passado, por exemplo. Só de exemplo, o iniciador solo hoje em dia é a Skye, então ela é preparada para “flashar” e ir para frente. Então essas reações rápidas são coisas que os próprios times estão fazendo aqui na nossa liga, principalmente a Cloud9 que é muito boa nisso. Então a gente estava tentando reagir rápido baseado no controle que eles tinham de ataque e de defesa.<br><br>
+          Sacy e a Sentinels retornam aos servidores contra a FURIA, na próxima quinta-feira, às 16h, horário de Brasília, pela última rodada da fase regular do VCT Américas. Ambas as organizações ainda têm chance de classificação para o mata-mata.</p>
+      
+        <h4 class="noticia_h4">O que a Sentinels precisa para passar?</h4>
+        <p class="noticia_p">Na última rodada, cinco times batalham por três vagas e há possibilidade de elas sejam definidas com base em critérios de desempate. O primeiro deles é o confronto direto, o segundo o saldo de mapas e o último o saldo de rounds. Para que a Sentinels consiga então se classificar, sua primeira e mais importante necessidade é vencer o jogo diante da FURIA, para encerrar a campanha com quatro vitórias e cinco derrotas.<br><br>
+          Dentro desse cenário, há diferentes formas de obter a qualificação. Caso Evil Geniuses e Leviatán vençam suas partidas e a 100Thieves seja derrotada pela MIBR, a Sentinels conseguiria vantagem sobre o time norte-americano e os Panteras - todos empatados com quatro triunfos e cinco derrotas - no critério de confronto direto, por ter vencido ambos em confrontos diretos.</p>
+        <p class="noticia_p">Outra hipótese viável considera o cenário de vitórias da própria Sentinels, além de Leviatán e 100Thieves somado a uma derrota da EG. Isso deixaria o time de Sacy empatado em vitórias e derrotas com FURIA e Evil Geniuses na disputa por uma vaga. Nessa possibilidade, por existir empate nos confrontos diretos entre as três equipes, com uma vitória para cada, a definição aconteceria por saldo de mapas, o que torna importante uma vitória da Sentinels por 2 a 0 na rodada final.</p>
+      
+      </div>
+
+      <footer>
+        <div style="background-color: #2C1D4B;">
+            <div class="row">
+                <div class="col-12 border-bottom mb-4" >
+                    <a id="titulo" href="#" title="Página inicial">
+                        <h2>The Gaming Arena</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <ul>
+                        <li class="titulo_lista">Referência</li>
+                        <li><a href="#">Politica de Privacidade</a> </li>
+                        <li><a href="#">Termos de Serviços</a> </li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                        <ul>
+                            <li class="titulo_lista">Conteúdo</li>
+                            <li><a href="#">Notícias</a></li>
+                            <li><a href="#">Torneios</a></li>
+                            <li><a href="#">Transmissões</a></li>
+                        </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <ul>
+                        <li class="titulo_lista">Usuário</li>
+                        <li><a href="#">Minha Conta</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <ul>
+                        <li class="titulo_lista">Idioma</li>
+                        <li><a href="#"><img src="../IMG/rodape/bandeira-brasil.jpg" alt="PT-BR" width="15px">PT-BR</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-12 d-flex align-items-lg-end align-items-md-around p-4 ">
+                    <a href="#"><img class="icone_footer " src="../IMG/rodape/facebook-icone.png" alt="Facebook"
+                            title="Facebook" width="30px"></a>
+                    <a href="#"><img class="icone_footer" src="../IMG/rodape/twitter-icone.png" alt="Twitter" title="Twitter"
+                            width="30px"></a>
+                    <a href="#"><img class="icone_footer" src="../IMG/rodape/instagram-icone.png" alt="Instagram"
+                            title="Instagram" width="30px"></a>
+                    <a href="#"><img class="icone_footer" src="../IMG/rodape/discord-icone.png" alt="Discord" title="Discord"
+                            width="30px"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+</body>
+</html>
