@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/Feed.css">
+    <link rel="stylesheet" href="Css/Cabecalho.css">
+    <link rel="stylesheet" href="Css/rodape.css">
+    <link rel="stylesheet" href="Css/estiloFeedFiltro.css">
+    <title>The Gaming Arena</title>
+</head>
+
+<body>
+<!--NavBar-->
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid row">
+                    <a class="navbar-brand Letras_Cabeçalho col-6" href="index.html">
+                        <div><img src="IMG/Cabecalho/Logo White.png" width="60px" title="The Gaming Arena" alt=""></div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav  mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link col-1 active Letras_Cabeçalho" aria-current="page"
+                                    href="#">Transmissões</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link col-1 Letras_Cabeçalho" href="#">Torneios</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex col-4" role="search">
+                            <input class="form-control me-3 " type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn Botao_Pesquisa btn-outline-success" type="submit">Pesquisar</button>
+                        </form>
+                        <div class="dropdown col-1" style="color: #2C1D4B;" >
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #2C1D4B; width: 85px;">
+                                <img id="testea" src="IMG/Cabecalho/User.png" alt="" style="height: 50px;">
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" style="background-color: #2C1D4B;">
+                                <li class="testeae"><button type="button" class="btn btn-primary testeae "
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        login
+                                    </button></li>
+                                <li class="testeae"><button type="button" class="btn btn-primary testeae"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                        cadastro
+                                    </button></li>
+                            </ul>
+                        </div>    
+                    </div>   
+                </div>        
+            </nav>
+            <!--Fim NavBar-->
+        <div class="feed-container">
+        <div class="feed">
+            <div class="feed-notice1">
+                <img class="img notice1" src="IMG/Feed/img-noticia1.jpg" alt="img1">
+                <div class="feed-group">
+                    <span class="feed-text body1"><span>Notícia</span></span>
+                </div>
+                <div class="feed-text01" class="Texto_grande"><a href="paginas/paginaNoticiaVCT.html">
+                    <h1 style="font-size: 30px;">VCT Américas 2023: Sacy promete Sentinels "200%" contra FURIA</h1>
+                </div>
+                <div class="feed-text02">
+                    <p> Iniciador brasileiro também respondeu sobre questões táticas e organizacionais do grupo…</p>
+                </div>
+            </a>
+                <span class="feed-text05 body2"><span>16/05/2023</span></span>
+            </div>
+
+            <div class="feed-notice2">
+                <img class="img notice2" src="IMG/Feed/img-noticia2.webp" alt="img1">
+                <div class="feed-group">
+                    <span class="feed-text body1"><span>Notícia</span></span>
+                </div>
+                <div class="feed-text01" class="Texto_grande"><a href="paginas/paginaNoticiaMonte.html">
+                    <h1 style="font-size: 30px;">BLAST Major Paris 2023: conheça a Monte, carrasca dos brasileiros</h1>
+                </div>
+                <div class="feed-text02">
+                    Equipe europeia venceu Fluxo, paiN e FURIA em campeonato realizado na França e ainda protagonizou treta com s1mple…
+                </div>
+            </a>
+                <span class="feed-text05 body2"><span>17/05/2023</span></span>
+            </div>
+            <div class="feed-notice3">
+                <div class="feed-group-notice1">
+                    <!--<p class="feed-text-caption">Sacy comenta desempenho da Sentinels durante VCT Americas</p>-->
+                </div>
+                <div class="feed-group-notice2"></div>
+                <div class="feed-group-notice3"></div>
+            </div>
+        </div>
+    </div>
+    
+                        <!-- Feed Filtro -->
+
+                        <div id="feedFiltroMainContainer">
+                            <div id="feedFiltroTexto1">
+                                <h2 class="feedFiltroh2"><b>Suas Inscrições:</b></h2>
+                                <h4 id="feedFiltroh4">Filtro: </h4>
+                                <form id="feedFiltroh4" action="">
+                                    <select name="filtro" id="filtro">
+                                        <option value="">Inscrições</option>
+                                        <option value="">Jogos</option>
+                                        <option value="">Todos</option>
+                                    </select>
+                                </form>
+                            </div>
+                    
+                    
+                            <div class="feedFiltroTextoPosition">
+                                <h4 id="titulo4"><b>Valorant:</b></h4>
+                                <div class="feedFiltroTextoInside">
+                                    <h5 class="titulo5">Noticias em destaque:</h5>
+                                    <h5 class="positionVejaTambem" class="titulo5">Veja também:</h5>
+                                </div>
+                            </div>
+                            <div class="feedFiltroInsideContainer">
+                                <div class="feedFiltroConteudo">
+                                    <div class="feedFiltroConteudoImg">
+                                        <img class="feedFiltroImg" src="IMG/feedfiltro/img1valorant.jpg" alt="" width="200px" height="200px">
+                                        <h6 class="feedFiltroData">16/05/2023</h6>
+                                    </div>
+                                    <div class="feedFiltroConteudoTexto">
+                                        <a class="hiperlink" href="#"><h4 class="titulo5">Notas da Atualização 6.08 do Valorant</h4></a>
+                                        <h5 class="titulo5Descricao">Antes de todo mundo começar a destrinchar o novo Passe de Batalha, nós fizemos algumas atualizações ...</h5>
+                                    </div>
+                                </div>
+                                <div class="feedFiltroConteudo">
+                                    <div class="feedFiltroConteudoImg">
+                                        <img class="feedFiltroImg" src="IMG/feedfiltro/img2valorant.jpg" alt="" width="200px" height="200px">
+                                        <h6 class="feedFiltroData">16/05/2023</h6>
+                                    </div>
+                                    <div class="feedFiltroConteudoTexto">
+                                        <a class="hiperlink" href="#"><h4 class="titulo5">VCT Ascension será realizado em São Paulo</h4></a>
+                                        <h5 class="titulo5Descricao">Nesta terça-feira(16), a Riot Games revelou que o VCT Ascension ...</h5>
+                                    </div>
+                                </div>
+                                <div class="feedFiltroVejaTambem">
+                                    <img class="imgVejaTambem" src="IMG/feedfiltro/img3valorant.jpg" alt="" width="150px" height="">
+                                    <img class="imgVejaTambem" src="IMG/feedfiltro/img4valorant.jpg" alt="" width="150px">
+                                    <img class="imgVejaTambem" src="IMG/feedfiltro/img5valorant.jpg" width="100px" alt="">
+                                </div>
+                            </div>
+                    
+                    
+                    
+                            <div class="feedFiltroTextoPosition">
+                                <h4 id="titulo4"><b>Overwatch:</b></h4>
+                                <div class="feedFiltroTextoInside">
+                                    <h5 class="titulo5">Noticias em destaque:</h5>
+                                    <h5 class="positionVejaTambem" class="titulo5">Veja também:</h5>
+                                </div>
+                            </div>
+                            <div class="feedFiltroInsideContainer">
+                                <div class="feedFiltroConteudo">
+                                    <div class="feedFiltroConteudoImg">
+                                        <img class="feedFiltroImg" src="IMG/feedfiltro/img1overwatch.jpg" alt="" width="200px" height="200px">
+                                        <h6 class="feedFiltroData">16/05/2023</h6>
+                                    </div>
+                                    <div class="feedFiltroConteudoTexto">
+                                        <a class="hiperlink" href="#"><h4 class="titulo5">Modo PvE de Overwatch 2 foi cancelado</h4></a>
+                                        <h5 class="titulo5Descricao">PvE ainda será lançado na Temporada 6, mas não da forma como foi anunciado em 2019</h5>
+                                    </div>
+                                </div>
+                                <div class="feedFiltroConteudo">
+                                    <div class="feedFiltroConteudoImg">
+                                        <img class="feedFiltroImg" src="IMG/feedfiltro/img2overwatch.jpg" alt="" width="200px" height="200px">
+                                        <h6 class="feedFiltroData">16/05/2023</h6>
+                                    </div>
+                                    <div class="feedFiltroConteudoTexto">
+                                        <a class="hiperlink" href="#"><h4 class="titulo5">Overwatch 2 revela novo herói Lifeweaver</h4></a>
+                                        <h5 class="titulo5Descricao">Lifeweaver é o novo héroi de Overwatch 2, veja detalhes sobre o suporte inédito, suas habilidades, historia e mais.</h5>
+                                    </div>
+                                </div>
+                                <div class="feedFiltroVejaTambem">
+                                    <img class="imgVejaTambem" src="IMG/feedfiltro/img3overwatch.jpg" alt="" width="150px" height="">
+                                    <img class="imgVejaTambem" src="IMG/feedfiltro/img4overwatch.jpg" alt="" width="150px">
+                                    <img class="imgVejaTambem" src="IMG/feedfiltro/img5overwatch.jpg" width="100px" alt="">
+                                </div>
+                            </div>
+                        </div>
+                 
+    <footer>
+
+        <div id="linha">
+            <a id="titulo"href="#" title="Página inicial"><h2>The Gaming Arena</h2></a>
+        </div>
+        <div id="div_footer">
+            
+                <div>
+                    <ul id="lista1">
+                        <li class="titulo_lista">Referência</li>
+                        <li><a href="#">Politica de Privacidade</a> </li>
+                        <li><a href="#">Termos de Serviços</a> </li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul id="lista2">
+                        <li class="titulo_lista">Conteúdo</li>
+                        <li><a href="#">Notícias</a></li>
+                        <li><a href="#">Torneios</a></li>
+                        <li><a href="#">Transmissões</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div id="lista3">
+                        <ul>
+                            <li class="titulo_lista">Usuário</li>
+                            <li><a href="#">Minha Conta</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="teste">
+                    <ul id="lista4">
+                        <li class="titulo_lista">Idioma</li>
+                        <li><a href="#"><img src="IMG/rodape/bandeira-brasil.jpg" alt="PT-BR" width="15px">PT-BR</a></li>
+                    </ul>
+                </div>
+                <div id="redes_sociais">
+                        <a href="#"><img class="icone_footer" src="IMG/rodape/facebook-icone.png" alt="Facebook" title="Facebook" width="30px"></a>
+                        <a href="#"><img class="icone_footer" src="IMG/rodape/twitter-icone.png" alt="Twitter" title="Twitter" width="30px"></a>
+                        <a href="#"><img class="icone_footer" src="IMG/rodape/instagram-icone.png" alt="Instagram" title="Instagram" width="30px"></a>
+                        <a href="#"><img class="icone_footer" src="IMG/rodape/discord-icone.png" alt="Discord" title="Discord" width="30px"></a>
+                </div>
+        </div>
+         
+        </footer>
+
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
