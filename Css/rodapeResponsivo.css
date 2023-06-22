@@ -1,60 +1,45 @@
 *{
-    margin: 0px;
+  margin: 0px;
 }
 
 
 @font-face {
-  font-family: Inter ;
-  src: url(../font/rodape/Inter-VariableFont_slnt\,wght.ttf);
+font-family: Inter ;
+src: url(../font/rodape/Inter-VariableFont_slnt\,wght.ttf);
 }
 footer{
-  width: 100%;
-  height:190px;
-  padding-bottom: 47%;
-  background-color: #2C1D4B;
-  font-family: Inter;
-}
-#div_footer{
-display: flex;
-}
-#linha{
 width: 100%;
-height: 50px;
-display: flex;
-align-items: center;
-justify-content: center;
-border-bottom: 1px solid #FFFFFF;
+background-color: #2C1D4B;
+font-family: Inter;
 }
 
 #titulo{
-  color: #FFFFFF;
-  text-align: center;
-  padding: 1px;
+color: #FFFFFF;
+text-align: center;
 }
 
 .titulo_lista{
-  font-weight: bold;
-  border-bottom: 1px solid #FFFFFF;
-  font-size: 18px;
+font-weight: bold;
+font-size: 18px;
 }
 
 ul{
-  list-style: none;
-  color: #FFFFFF;
+list-style: none;
+color: #FFFFFF;
 }
 
 a{
-  text-decoration: none;
-  color: #FFFFFF;
+text-decoration: none;
+color: #FFFFFF;
 }
 a:hover{
-  color: #636363;
-  text-shadow: 0px 0px 5px black;
+color: #636363;
+text-shadow: 0px 0px 5px black;
 }
 
 .icone_footer:hover{
-  border-radius: 50%;
-  box-shadow: 0px 0px 5px black;
+border-radius: 50%;
+box-shadow: 0px 0px 5px black;
 }
 
 #lista1{
@@ -71,16 +56,10 @@ margin-top: 20px;
 margin-top: 20px;
 }
 #row{
-   padding-right: 0px!important;
+ padding-right: 0px!important;
 }
 
-#redes_sociais{
-margin-top: 50px;
-margin-left: auto;
-margin-right: 30px;
-text-align: end;
-align-items:self-end;
-}
+
 
 .icone_footer{
 padding: 5px;
