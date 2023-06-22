@@ -74,11 +74,11 @@ body, html{
     justify-content: space-between;
 }
 
-img{
+/* img{
     margin:auto; 
     display: block; 
     width: 20%;
-}
+} */
 
 legend{
     text-align: center; 
