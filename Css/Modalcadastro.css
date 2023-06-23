@@ -86,7 +86,7 @@ legend{
     padding: 10px;
 }
 .nome-sobrenome{
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: space-between;
 }
@@ -113,13 +113,13 @@ legend{
     background: var(--white-color)
 }
 
-#nome{
+/* #nome{
     width: 40%;
 }
 
 #sobrenome{
     width: 40%;
-}
+} */
 
 .input-datanascimento{
     display: flex;
