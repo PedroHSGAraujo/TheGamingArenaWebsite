@@ -1,0 +1,89 @@
+:root {
+    --main-color: #2C1D4B;
+    --background-color: #404040;
+    --link-color: #666666;
+    --text1: #999999;
+    --highligth-text: #333333;
+    --input-text: #555555;
+    --white-color: #FFFFFF;
+    --point-list: #CCCCCC;
+    --line-input: #D9D9D9;
+    --black-color: #000000;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../font/cadastro/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+*{
+    margin: 0;
+}
+
+.container-transmissoes{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.filtro-transmissoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white-color);
+    position: relative;
+    margin-top: 30px;
+    padding-bottom: 2%;
+}
+
+#jogos{
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 5%;
+}
+
+.imagem-jogo{
+    width: 450px;
+    padding: 2%;
+}
+
+figure{
+    position: relative;
+    display: inline-block;
+}
+
+.spec{
+    position: absolute;
+    top: 204px;
+    left: 10px;
+    color: var(--white-color);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.text-descricao{
+    display: flex;
+}
+
+.tag-jogo{
+    position: relative;
+    text-align: center;
+    margin-top: 1%;
+    padding: 3px;
+    height: 30px;
+    color: var(--white-color);
+    border-radius: 10px;
+    background-color: var(--main-color);
+}
+
+.link-jogo:hover{
+    color: #999999;
+}
+
+.imagem-jogo:hover{
+    scale: 1.05;
+    transition: .3s;
+}
+
+.img-thumbnail:hover{
+    border: 1px var(--black-color) solid;
+    box-shadow: 0px 0px 5px var(--main-color);
+}
