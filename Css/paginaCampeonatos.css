@@ -19,7 +19,7 @@
 }
 .container-campeonatos{
     width: 100%;
-    height: 700px;
+    height: 500px;
     display: flex;
     position: relative;
     background: var(--background-color);
@@ -43,14 +43,19 @@ p{
     position: relative;
     top: 30px;
 }
-#campeonatoh4{
+#campeonatoh5{
     position: relative;
-    left: 30px;
-    top: 30px;
+    left: 60px;
+    top: 10px;
     color: rgba(255, 255, 255, 1);
 }
 
 select {
     background-color: #636363;
     color: rgba(255, 255, 255, 1);
+    position: relative;
+    left: 90px;
+    top: 10px;
 }
+
+
