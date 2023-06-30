@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/Css/header.css">
     <link rel="stylesheet" href="/Css/Modalcadastro.css">
     <link rel="stylesheet" href="/Css/rodapeResponsivo.css">
-    <link rel="stylesheet" href="/Css/paginaCampeonatos.css">
+    <link rel="stylesheet" href="/Css/paginaTorneios.css">
 </head>
 <body>
    <header>
@@ -207,7 +207,7 @@
   <main>
  
    <div class="container-campeonatos">
-      <div class="row">
+      <div class="row" style="width: 100%;">
           <div class="col-sm-3" id="filtro-campeonatos">
                <label class="filtro" for="inputGroupSelect01">Filtrar por:</label>
                <select class="form-select" id="inputGroupSelect01" style="color: #fff; 
@@ -241,75 +241,122 @@
                   </label>
               </div>
           </div>
-          <div class="col-sm-3" id="filtro-campeonatos">
-              <input type="text" name="search" id="searchD" placeholder="Pesquisar">
+          <div class="col-md-3" id="filtro-campeonatos">
+              <input type="text" name="search" id="search" placeholder="Pesquisar por campeonato">
           </div>
-          <div class="col-sm-4" id="filtro-campeonatos">
+          <div class="col-sm-4" id="filtro-campeonatos" style="width: 450px;">
               <div id="principais-campeonatos">
-                  <h5 class="text-center" style="color: #FFFF;">Veja também:</h5>
-                  
+                  <h5 class="text-center" style="color: #FFFF;">Principais:</h5>
+                  <div class="col">
+                    <div class="card" style="height: 70px; width: 95%;">
+                      <div class="card-body">
+                        <div class="text-card"  style=" font-size: 15px;"><p>Superliga Summer 2023 - Group Stage</p>
+                       <img src="/IMG/Feed/red-play.png" alt="" width="30px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card" style="height: 70px; width: 95%;">
+                      <div class="card-body">
+                        <div class="text-card"  style=" font-size: 15px;"><p>The Bali Major 2023</p>
+                       <img src="/IMG/Feed/red-play.png" alt="" width="30px" ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card" style="height: 70px; width: 95%;">
+                      <div class="card-body">
+                        <div class="text-card"  style=" font-size: 15px;"><p>LCK Summer 2023</p>
+                       <img src="/IMG/Feed/red-play.png" alt="" width="30px"></div>
+                      </div>
+                    </div>
+                  </div>
               </div>
           </div>
           <div class="col-sm-8" id="cards-torneios" >
             <div class="row row-cols-1 row-cols-md-2 g-4">
                <div class="col">
                  <div class="card">
-                   <img src="..." class="card-img-top" alt="...">
-                   <div class="card-body">
-                     <h5 class="card-title">Card title</h5>
-                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                   <div class="card-body" style="
+                   height: 120px;">
+                     <h5 class="card-title" style="font-size: 12px;">PUBG</h5>
+                     <div class="text-card"><p>LPL Summer 2023
+                        Overview</p>
+                    <img src="/IMG/Feed/red-play.png" alt="" width="50px"></div>
+                    <div class="datas">
+                        <legend id="legend-card">
+                            Inicia 
+                            11.07.23
+                        </legend>
+                        <legend id="legend-card">
+                            Finaliza 
+                            15.07.23
+                        </legend>
+                    </div>
                    </div>
                  </div>
                </div>
                <div class="col">
-                 <div class="card">
-                   <img src="..." class="card-img-top" alt="...">
-                   <div class="card-body">
-                     <h5 class="card-title">Card title</h5>
-                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="card">
+                  <div class="card-body" style="
+                  height: 120px;">
+                    <h5 class="card-title" style="font-size: 12px;">Valorant</h5>
+                    <div class="text-card" style="font-size: 15px;"><p>VALORANT Challengers 2023: North America Challenger Playoffs</p>
+                   <img src="/IMG/Feed/red-play.png" alt="" width="50px"></div>
+                   <div class="datas">
+                       <legend id="legend-card">
+                           Inicia 
+                           31.05.23
+                       </legend>
+                       <legend id="legend-card">
+                           Finaliza
+                            10.06.23
+                       </legend>
                    </div>
-                 </div>
-               </div>
+                  </div>
+                </div>
+              </div>
                <div class="col">
-                 <div class="card">
-                   <img src="..." class="card-img-top" alt="...">
-                   <div class="card-body">
-                     <h5 class="card-title">Card title</h5>
-                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                <div class="card">
+                  <div class="card-body" style="
+                  height: 120px;">
+                    <h5 class="card-title" style="font-size: 12px;">League of Legends</h5>
+                    <div class="text-card"><p>LPL Summer 2023
+                       Overview</p>
+                   <img src="/IMG/Feed/red-play.png" alt=""width="50px"></div>
+                   <div class="datas">
+                       <legend id="legend-card">
+                           Inicia 
+                           08.2023
+                       </legend>
+                       <legend id="legend-card">
+                           Finaliza 
+                           08.2023
+                       </legend>
                    </div>
-                 </div>
-               </div>
-               <div class="col">
-                 <div class="card">
-                   <img src="..." class="card-img-top" alt="...">
-                   <div class="card-body">
-                     <h5 class="card-title">Card title</h5>
-                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-body" style="
+                  height: 120px;">
+                    <h5 class="card-title" style="font-size: 12px;">CS:GO</h5>
+                    <div class="text-card"><p>CCT West Europe
+                   <img src="/IMG/Feed/red-play.png" alt="" width="50px"></div>
+                   <div class="datas">
+                       <legend id="legend-card">
+                           Inicia 
+                           02.2023
+                       </legend>
+                       <legend id="legend-card">
+                           Finaliza 
+                           12.2023
+                       </legend>
                    </div>
-                 </div>
-               </div>
-            </div>
-          </div>
-          <div class="col-sm-4" id="cards-torneios">
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-               <div class="col">
-                 <div class="card">
-                   <img src="..." class="card-img-top" alt="...">
-                   <div class="card-body">
-                     <h5 class="card-title">Card title</h5>
-                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                   </div>
-                 </div>
-               </div>
-               <div class="col">
-                 <div class="card">
-                   <img src="..." class="card-img-top" alt="...">
-                   <div class="card-body">
-                     <h5 class="card-title">Card title</h5>
-                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                   </div>
-                 </div>
-               </div>
+                  </div>
+                </div>
+              </div>
           </div>
       </div>
 </div>
