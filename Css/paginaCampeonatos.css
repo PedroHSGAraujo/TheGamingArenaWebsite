@@ -19,43 +19,23 @@
 }
 .container-campeonatos{
     width: 100%;
-    height: 500px;
-    display: flex;
+    height: 700px;
     position: relative;
-    background: var(--background-color);
+    display: grid;
 }
-.cabecalho{
-    display: flex;
-}
-p{
+
+#filtro-campeonatos{
     color: var(--white-color);
-    font-size: 25px;
-    margin-top: 20px;
-    margin-left: 10px;
-    font-family: Inter;
-    font-weight: bold;
-}
-#texto-campeonatos{
-    width: 100%;
-    background-color:rgb(64,64,64);;
-    display: flex;
-    color: rgba(255, 255, 255, 1);
     position: relative;
-    top: 30px;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding-bottom: 2%;
+    left: 30px;
+    height: 100px;
 }
-#campeonatoh5{
+#cards-torneios{
+    justify-content: baseline;
     position: relative;
-    left: 60px;
-    top: 10px;
-    color: rgba(255, 255, 255, 1);
+    margin-left: 40px;
+    height: 500px;
 }
-
-select {
-    background-color: #636363;
-    color: rgba(255, 255, 255, 1);
-    position: relative;
-    left: 90px;
-    top: 10px;
-}
-
-
