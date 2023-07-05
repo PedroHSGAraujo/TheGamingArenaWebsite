@@ -1,195 +1,267 @@
 *{
-    margin: 0;
-  }
+  margin: 0;
+}
+
+.feed-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  align-items: center;
+}
+.feed {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  background: rgb(64,64,64);
+  /*background: linear-gradient(160deg, rgba(64,64,64,1) 17%, rgba(38,9,99,1) 100%);*/
+}
+
+.feed-notice1 {
+  /* position: relative; */
+  left: 6%;
+  top: 78px;
+}
+.feed-notice2 {
+  /* position: relative; */
+  left: 38%;
+  top: 78px;
+}
+.img{
+  top: 5%;
+  height: 260px;
+  width: 400px;
+  border-radius: 20px;
+  /* position: relative; */
+}
+
+.feed-text {
+  top: 3.684722900390625px;
+  left: 5.367700576782227px;
+  color: rgba(255, 255, 255, 1);
+  /* width: 135px; */
+  height: auto;
+  position: relative;
+  text-align: center;
+  line-height: normal;
+}
+.feed-text01 {
+  top: 340px;
+  color: rgba(255, 255, 255, 1);
+  /* width: 450px; */
+  height: auto;
+  /* position: relative; */
+  font-size: 15px!;
+  font-style: Medium;
+  text-align: left;
+  font-family: Fira Code;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+}
+.feed-text02 {
+  top: 450px;
+  color: rgba(255, 255, 255, 1);
+  /* width: 450px; */
+  height: auto;
+  /* position: absolute; */
+  font-size: 20px;
+  font-style: Light;
+  text-align: left;
+  font-family: Fira Code;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.feed-text03 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  /* position: absolute; */
+  text-align: left;
+  line-height: normal;
+}
+.feed-text04 {
+  left: 137px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  /* position: absolute; */
+  font-size: 30px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Fira Code;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.feed-text05 {
+  top: 10px;
+  left: 150px;
+  color: rgba(255, 255, 255, 1);
+  width: 138px;
+  height: auto;
+  position: relative;
+  text-align: center;
+  line-height: normal;
+}
+
+.feed-group {
+  top: 280px;
+  left: 0px;
+  width: 146px;
+  height: 38.68965530395508px;
+  display: flex;
+  /* position: absolute; */
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: #2c1d4b;
+}
+
+.body1 {
+  font-size: 30px;
+  font-style: normal;
+  font-family: Fira Code;
+  font-weight: 300px;
+  font-stretch: normal;
+}
+.body2 {
+  font-size: 20px;
+  font-style: normal;
+  font-family: Fira Code;
+  font-weight: 500px;
+  font-stretch: normal;
+}
+.feed-notice3{
+  /* position: absolute; */
+  left: 70%;
+  top: 78px;
   
-  .feed-container {
+}
+.feed-group-notice1{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 11.20px;
+  border-radius: 20px;
+  width: 425px;
+  height: 178px;
+  background-image: url(../IMG/Feed/Sacy.jpg);
+  background-size: cover;
+}
+.feed-group-notice2{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 11.20px;
+  border-radius: 20px;
+  width: 425px;
+  height: 178px;
+  background-image: url(../IMG/Feed/loud.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.feed-group-notice3{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 11.20px;
+  border-radius: 20px;
+  width: 425px;
+  height: 178px;
+  background-image: url(../IMG/Feed/nrg.jpeg);
+  background-size: cover;
+}
+.c-item{
+  height: 300px;
+}
+.c-img{
+  height: 100%;
+  object-fit: cover;
+}
+
+/*
+Responsividade
+*/
+/* @media (max-width: 1410px) {
+  .feed-notice3{
+    display: none;
+  }
+  .feed-notice2{
+    left: 55%;
+  }
+  .feed-notice1{
+    left:10%;
+  }
+  #carouselExampleIndicators{
+    width: 75%;
+  }
+}
+@media (max-width: 1024px) {
+  .feed-notice2{
+    display: none;
+  }
+  .feed-notice1{
+    left:25%;
+  }
+  #carouselExampleIndicators{
+    width: 75%;
+  }
+}
+@media (max-width: 1000px) {
+  #carouselExampleIndicators{
     width: 100%;
-    display: flex;
-    overflow: auto;
-    align-items: center;
   }
-  .feed {
-    width: 100%;
-    height: 700px;
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    align-items: flex-start;
-    background: rgb(64,64,64);
-    /*background: linear-gradient(160deg, rgba(64,64,64,1) 17%, rgba(38,9,99,1) 100%);*/
+} */
+@media (max-width: 1000px) {
+  #carouselExampleIndicators{
+    display: none;
   }
-  
-  .feed-notice1 {
-    position: absolute;
-    left: 6%;
-    top: 78px;
+  .feed-notice3{
+    display: none;
   }
-  .feed-notice2 {
-    position: absolute;
-    left: 38%;
-    top: 78px;
-  }
+}
+@media (max-width: 425px) {
   .img{
     top: 5%;
     height: 260px;
-    width: 450px;
+    width: 400px;
     border-radius: 20px;
-    position: absolute;
+    /* position: relative; */
   }
-  
-  .feed-text {
-    top: 3.684722900390625px;
-    left: 5.367700576782227px;
-    color: rgba(255, 255, 255, 1);
-    width: 135px;
-    height: auto;
-    position: absolute;
-    text-align: center;
-    line-height: normal;
-  }
-  .feed-text01 {
-    top: 340px;
-    color: rgba(255, 255, 255, 1);
-    width: 450px;
-    height: auto;
-    position: absolute;
-    font-size: 15px!;
-    font-style: Medium;
-    text-align: left;
-    font-family: Fira Code;
-    font-weight: 500;
-    line-height: normal;
-    font-stretch: normal;
-  }
-  .feed-text02 {
-    top: 450px;
-    color: rgba(255, 255, 255, 1);
-    width: 450px;
-    height: auto;
-    position: absolute;
-    font-size: 20px;
-    font-style: Light;
-    text-align: left;
-    font-family: Fira Code;
-    font-weight: 300;
-    line-height: normal;
-    font-stretch: normal;
-    text-decoration: none;
-  }
-  .feed-text03 {
-    color: rgba(255, 255, 255, 1);
-    height: auto;
-    position: absolute;
-    text-align: left;
-    line-height: normal;
-  }
-  .feed-text04 {
-    left: 137px;
-    color: rgba(255, 255, 255, 1);
-    height: auto;
-    position: absolute;
-    font-size: 30px;
-    font-style: SemiBold;
-    text-align: left;
-    font-family: Fira Code;
-    font-weight: 600;
-    line-height: normal;
-    font-stretch: normal;
-    text-decoration: none;
-  }
-  .feed-text05 {
-    top: 290px;
-    left: 316px;
-    color: rgba(255, 255, 255, 1);
-    width: 138px;
-    height: auto;
-    position: absolute;
-    text-align: center;
-    line-height: normal;
-  }
-  
-  .feed-group {
-    top: 280px;
-    left: 0px;
-    width: 146px;
-    height: 38.68965530395508px;
-    display: flex;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 1;
-    background-color: #2c1d4b;
-  }
-  
-  .body1 {
-    font-size: 30px;
-    font-style: normal;
-    font-family: Fira Code;
-    font-weight: 300px;
-    font-stretch: normal;
-  }
-  .body2 {
-    font-size: 20px;
-    font-style: normal;
-    font-family: Fira Code;
-    font-weight: 500px;
-    font-stretch: normal;
+  .feed-notice1 {
+    width: 400px;
   }
   .feed-notice3{
-    position: absolute;
-    left: 70%;
-    top: 78px;
-    
+    display: none;
   }
-  .feed-group-notice1{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 11.20px;
-    border-radius: 20px;
-    width: 425px;
-    height: 178px;
-    background-image: url(../IMG/Feed/Sacy.jpg);
-    background-size: cover;
+}
+@media (max-width: 375px) {
+  .img{
+    height: 260px;
+    width: 360px;
   }
-  .feed-group-notice2{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 11.20px;
-    border-radius: 20px;
-    width: 425px;
-    height: 178px;
-    background-image: url(../IMG/Feed/loud.jpg);
-    background-size: cover;
-    background-position: center center;
+  .feed-notice1 {
+    width: 360px;
   }
-  .feed-group-notice3{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 11.20px;
-    border-radius: 20px;
-    width: 425px;
-    height: 178px;
-    background-image: url(../IMG/Feed/nrg.jpeg);
-    background-size: cover;
+  .feed-text05 {
+    left: 100px;
   }
-  /*
-  Responsividade
-  */
-  @media (max-width: 1410px) {
-    .feed-notice3{
-      display: none;
-    }
-    .feed-notice2{
-      left: 55%;
-    }
-    .feed-notice1{
-      left:10%;
-    }
+  .feed-notice3{
+    display: none;
   }
-  @media (max-width: 1024px) {
-    .feed-notice2{
-      display: none;
-    }
-    .feed-notice1{
-      left:25%;
-    }
+}
+/* @media (max-width: 425px) {
+  .img{
+    height: 260px;
+    width: 300px;
   }
+  .feed-notice1 {
+    width: 300px;
+  }
+  .feed-text05 {
+    left: 50px;
+  }
+  .feed-notice3{
+    display: none;
+  }
+} */
