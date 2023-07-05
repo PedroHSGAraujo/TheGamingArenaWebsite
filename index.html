@@ -65,7 +65,7 @@
         <div class="mobile-menu">
             <ul>
                 <li class="nav-item"><a href="paginas/paginaTransmissoes.html" class="nav-link">Transmissões</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Torneios</a></li>
+                <li class="nav-item"><a href="paginas/paginaTorneios.html" class="nav-link">Torneios</a></li>
                 <input type="text" name="search" id="searchM" placeholder="Pesquisar">
                 <i id="lupa-mobile" class="fa-solid fa-magnifying-glass"></i>
                 <div class="dropdown">
@@ -225,8 +225,35 @@
     </header>
     <script src="Css/scripthome.js"></script>
 
+    <div id="carouselExampleIndicators" class="carousel slide w-75  m-auto mt-5">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="IMG/Feed/img-carrocel1.png" class="d-block w-100 c-img " alt="...">
+          </div>
+          <div class="carousel-item c-item">
+            <img src="IMG/Feed/img-carrocel2.png" class="d-block w-100 c-img" alt="...">
+          </div>
+          <div class="carousel-item c-item">
+            <img src="IMG/Feed/img-carrocel3.jpg" class="d-block w-100 c-img" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
     <!-- Feed Principal -->
-    <div class="feed-container">
+    <!-- <div class="feed-container">
         <div class="feed">
             <div class="feed-notice1">
                 <img class="img notice1" src="IMG/Feed/img-noticia1.jpg" alt="img1">
@@ -260,11 +287,63 @@
                 <span class="feed-text05 body2"><span>17/05/2023</span></span>
             </div>
             <div class="feed-notice3">
-                <div class="feed-group-notice1">
+                <div class="feed-group-notice1"> -->
                     <!--<p class="feed-text-caption">Sacy comenta desempenho da Sentinels durante VCT Americas</p>-->
-                </div>
+                <!-- </div>
                 <div class="feed-group-notice2"></div>
                 <div class="feed-group-notice3"></div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container-fluid mt-5">
+        <div class="row justify-content-center">
+            <div class="col-xl-4 col-lg-6 col-md-10 col-sm-12">
+                <div class="feed-notice1">
+                    <div>
+                        <img class="img notice1" src="IMG/Feed/img-noticia1.jpg" alt="img1">
+                        <div class="feed-group">
+                            <span class="feed-text body1"><span>Notícia</span></span>
+                            
+                        <span class="feed-text05 body2"><span>16/05/2023</span></span>
+                        </div>
+                    </div>
+                    <div class="feed-text01" class="Texto_grande"><a href="paginas/paginaNoticiaVCTResponsivo.html">
+                            <h1 style="font-size: 30px;">VCT Américas 2023: Sacy promete Sentinels "200%" contra FURIA</h1>
+                    </div>
+                    <div class="feed-text02">
+                        <p> Iniciador brasileiro também respondeu sobre questões táticas e organizacionais do grupo…</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-10 col-sm-12">
+                <div class="feed-notice1">
+                    <img class="img notice2" src="IMG/Feed/img-noticia2.webp" alt="img1">
+                    <div class="feed-group">
+                        <span class="feed-text body1"><span>Notícia</span></span>
+                        
+                    <span class="feed-text05 body2"><span>17/05/2023</span></span>
+                    </div>
+                    <div class="feed-text01" class="Texto_grande"><a href="paginas/paginaNoticiaMonteResponsivo.html">
+                            <h1 style="font-size: 30px;">BLAST Major Paris 2023: conheça a Monte, carrasca dos brasileiros
+                            </h1>
+                    </div>
+                    <div class="feed-text02">
+                        Equipe europeia venceu Fluxo, paiN e FURIA em campeonato realizado na França e ainda protagonizou
+                        treta com s1mple…
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-10 col-sm-12">
+                <div class="feed-notice3">
+                    <div class="feed-group-notice1">
+                        <!--<p class="feed-text-caption">Sacy comenta desempenho da Sentinels durante VCT Americas</p>-->
+                    </div>
+                    <div class="feed-group-notice2"></div>
+                    <div class="feed-group-notice3"></div>
+                </div>
             </div>
         </div>
     </div>

@@ -33,6 +33,7 @@
     position: relative;
     margin-top: 30px;
     padding-bottom: 2%;
+    margin-left: 6%;
 }
 
 #jogos{
@@ -42,7 +43,7 @@
 }
 
 .imagem-jogo{
-    width: 450px;
+    /* width: 450px; */
     padding: 2%;
 }
 
@@ -52,9 +53,9 @@ figure{
 }
 
 .spec{
-    position: absolute;
+    /* position: absolute;
     top: 204px;
-    left: 10px;
+    left: 10px; */
     color: var(--white-color);
     background-color: rgba(0, 0, 0, 0.6);
 }
